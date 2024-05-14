@@ -99,6 +99,7 @@ Ao criar o banco de dados, 3 usuários são criados automaticamente:
     "old": "senhaAntiga",
     "new": "senhaNova"
 }
+```
 
 ### Login
 
