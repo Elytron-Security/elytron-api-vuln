@@ -120,7 +120,7 @@ Ao criar o banco de dados, 3 usuários são criados automaticamente:
 
 # Vulnerabilidades
 
-Esta API é propositalmente vulnerável a um tipo de vulnerabilidade/fraqueza de cara item do OWASP Top 10 API. Listaremos as vulnerabilidades e impactos adicionados, assim como sugestões simples de como evitá-las e até mesmo corrigí-las. O intuito é que esta API sirva como complemento para o *workshop* de desenvolvimento seguro e seja utilizada para correções mais robustas e bem elaboradas.
+Esta API propositalmente vulnerável a vulnerabilidades listadas em algumas das categorias da [OWASP Top 10 API](https://owasp.org/API-Security/editions/2023/en/0x11-t10/). Listaremos as vulnerabilidades e impactos adicionados, assim como sugestões simples de como evitá-las e até mesmo corrigí-las. O intuito é que esta API sirva como complemento para o *workshop* de desenvolvimento seguro e seja utilizada para correções mais robustas e bem elaboradas.
 
 ## Material Auxiliar
 
