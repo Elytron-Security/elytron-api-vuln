@@ -1,0 +1,37 @@
+services:
+  api:
+    container_name: elytron-api
+    image: golang:latest
+    tty: true
+    depends_on:
+      - db
+    ports:
+      - '${API_PORT}:${API_PORT}'
+    volumes:
+      - .:/usr/app
+    working_dir: '/usr/app'
+    environment:
+      - DB_HOST=${DB_HOST}
+      - DB_USER=${DB_USER}
+      - DB_PASS=${DB_PASS}
+      - DB_NAME=${DB_NAME}
+      - DB_PORT=${DB_PORT}
+      - SECRET_KEY=${SECRET_KEY}
+    command: >
+      sh -c "go build main.go &&
+      ./main"
+
+
+  db:
+    container_name: api-db
+    image: mysql:latest
+    ports:
+      - '${DB_PORT}:${DB_PORT}'
+    environment:
+      - MYSQL_ROOT_PASSWORD=${DB_PASS}
+      - HOSTNAME=${DB_HOST}
+    volumes:
+      - ./sql/mysql:/var/lib/mysql
+      - ./sql/sql.sql:/scripts/sql.sql
+
+
