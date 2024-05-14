@@ -92,6 +92,14 @@ Ao criar o banco de dados, 3 usuários são criados automaticamente:
 - **🪣 DELETE /users/:userId** - Deleta um usuário existente.
 - **🔧 PUT /users/:userId/update-pass** - Atualiza a senha de um usuário existente.
 
+**Body:**
+
+```json
+{
+    "old": "senhaAntiga",
+    "new": "senhaNova"
+}
+
 ### Login
 
 - **📝 POST /login** - Efetua o login e recebe o *token* de acesso.
