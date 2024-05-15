@@ -55,7 +55,7 @@ A ausência de *rate-limit* pode causar impactos de negócio significativos, inc
 
 ## Sugestão de Correção no Código
 
-Existem várias bibliotecas prontas em Go que fornecem soluções robustas de *rate-limit*, porém, para fins de entendimento do processo, esta sugestão de correção criará uma solução do zero utilizando a técnica ***Token Bucket*** descrita no [material auxiliar](https://github.com/h41stur/api-vuln/tree/main/docs/base/Rate-Limit#rate-limiting).
+Existem várias bibliotecas prontas em Go que fornecem soluções robustas de *rate-limit*, porém, para fins de entendimento do processo, esta sugestão de correção criará uma solução do zero utilizando a técnica ***Token Bucket*** descrita no [material auxiliar](https://github.com/h41stur/elytron-api-vuln/tree/main/docs/base/Rate-Limit#rate-limiting).
 
 O código abaixo será bem comentado para que a implementação fique de forma mais clara. Primeiramente, criaremos o script `src/middlewares/rate-limit.go` que conterá toda a lógica do ***Token Bucket***:
 

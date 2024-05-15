@@ -12,7 +12,7 @@ Embora os desenvolvedores possam optar por expor a maioria dos *endpoints* admin
 
 # Exploração
 
-Esta falha lembra muito e está entre a [API1:2023 Broken Object Level Authorization](https://github.com/h41stur/api-vuln/tree/main/docs/API01-2023) e a [API3:2023 Broken Object Property Level Authorization](https://github.com/h41stur/api-vuln/tree/main/docs/API03-2023), pois se trata de uma fraquese que se aplica em ambos os casos simultaneamente. 
+Esta falha lembra muito e está entre a [API1:2023 Broken Object Level Authorization](https://github.com/h41stur/elytron-api-vuln/tree/main/docs/API01-2023) e a [API3:2023 Broken Object Property Level Authorization](https://github.com/h41stur/elytron-api-vuln/tree/main/docs/API03-2023), pois se trata de uma fraquese que se aplica em ambos os casos simultaneamente. 
 
 Nesta API, temos vários *endpoints* que se enquadram nesta vulnerabilidade, em sua maioria a aplicação das correções anteriores em um **nível de revisão geral** corrigem esta falha.
 
@@ -32,4 +32,4 @@ Ao acessar informações e funcionalidades não permitidos em seu escopo de auto
 
 ## Sugestão de Correção no Código
 
-Para corrigir essta vulnerabilidade, recomenda-se que todos os *endpoints* sejam revistos e questionados conforme a sua descrição. Para cada ponto que não esteja em conformidade, a correção correspondente a [API1:2023 Broken Object Level Authorization](https://github.com/h41stur/api-vuln/tree/main/docs/API01-2023) ou a [API3:2023 Broken Object Property Level Authorization](https://github.com/h41stur/api-vuln/tree/main/docs/API03-2023) deve ser implementada.
+Para corrigir essta vulnerabilidade, recomenda-se que todos os *endpoints* sejam revistos e questionados conforme a sua descrição. Para cada ponto que não esteja em conformidade, a correção correspondente a [API1:2023 Broken Object Level Authorization](https://github.com/h41stur/elytron-api-vuln/tree/main/docs/API01-2023) ou a [API3:2023 Broken Object Property Level Authorization](https://github.com/h41stur/elytron-api-vuln/tree/main/docs/API03-2023) deve ser implementada.
